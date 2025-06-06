@@ -19,4 +19,44 @@ Frontend: HTML, CSS, JavaScript
 
 Database: SQLite
 
-Others: Bootstrap (for styling forms)
+Installation and Setup
+Clone the repository:
+
+
+git clone https://github.com/Saitejaedla/Event-management-system.git
+Navigate to the project directory:
+
+
+cd Event-management-system
+Create a virtual environment (optional but recommended):
+
+
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+Install required packages:
+
+
+pip install -r requirements.txt
+Run migrations:
+
+
+python manage.py migrate
+Create a superuser (admin):
+
+
+python manage.py createsuperuser
+Run the development server:
+
+bash
+Copy code
+python manage.py runserver
+Open your browser and go to:
+
+User interface: http://127.0.0.1:8000/scm/
+
+Admin login: http://127.0.0.1:8000/admin
+
+Usage
+Users can register, log in, view available events, and book grounds.
+
+Admin can log in via the admin panel to add/edit events and view all bookings.
