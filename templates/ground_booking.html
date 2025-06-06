@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SCM | Ground Booking</title>
+  <title>Events Booking</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
@@ -16,15 +16,15 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/add_event.css' %}">
 </head>
-<body>
-<div class="container-fluid header text-center">
-  Ground Booking
+<body class="bg-primary">
+<div class="container-fluid header text-center bg-success">
+  <h1 style="color: white;">Events Booking</h1>
 </div>
 
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-lg-6 box">
-      Booking Details<br>
+    <div class="col-lg-6 box bg-success">
+      <center><h2 class="bg-danger" style="color: white; margin-right:30px; ">Events Booking Details</h2></center>
       <span style="font-size:18px">{{ status }}</span>
 
       <div class="row justify-content-center">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <a href="{% url 'scmapp:user_home' %}">Back</a>
+      <a href="{% url 'scmapp:user_home' %}" style="color: white;">Back</a>
     </div>
   </div>
 </div>

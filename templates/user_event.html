@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SCM | Events</title>
+  <title>CHMSC Events</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
@@ -16,16 +16,16 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/admin_event.css' %}">
 </head>
-<body>
-<div class="container-fluid header text-center">
-  Events
+<body class="bg-primary">
+<div class="container-fluid header text-center bg-success">
+ <h2 style="color: white;">CHMSC Events</h2>
 </div>
 
-<div class="container box">
-  Event Details
+<div class="container box bg-success">
+  <h2 class="bg-danger" style="color: white;">Event Details</h2>
 
   <table>
-    <tr>
+    <tr class="bg-danger" style="color: white;">
       <td>No</td>
       <td>Event name</td>
       <td>Date</td>
@@ -50,7 +50,7 @@
   </table>
 
   <div class="footer">
-    <a href="{% url 'scmapp:user_home' %}""><button>Back</button></a>
+    <a href="{% url 'scmapp:user_home' %}"><button>Back</button></a>
   </div>
 
 </div>

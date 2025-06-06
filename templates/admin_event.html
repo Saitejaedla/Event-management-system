@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SCM | Events</title>
+  <title>Events</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
@@ -16,19 +16,19 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/admin_event.css' %}">
 </head>
-<body>
+<body class="bg-primary">
 <div class="container-fluid header text-center">
-  Manage Events
+  <h1 class="bg-danger" style="color: white;">Manage Events</h1>
 </div>
 
-<div class="container box">
+<div class="container box bg-success">
   <a href="add_event.php"><button style="float:right;">Add Event</button></a>
-  Event Details<br>
-  <span style="font-size:16px;color:gray;">Click on the respective event to manage</span><br>
+  <h1 style="color: white;">Event Details<h1></h1><br>
+  
   <span style="font-size:16px;">{{ status }}</span>
 
   <table>
-    <tr>
+    <tr class="bg-primary" style="color: white;">
       <td>No</td>
       <td>Event name</td>
       <td>Date</td>

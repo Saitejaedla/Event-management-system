@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SCM | Update Event</title>
+  <title>Update Event</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
@@ -16,15 +16,15 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/add_event.css' %}">
 </head>
-<body>
+<body class="bg-success">
 <div class="container-fluid header text-center">
-  Manage Event
+  <h1 class="bg-primary" style="color: white;">Manage Event</h1>
 </div>
 
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-lg-6 box">
-      Update Event
+    <div class="col-lg-6 box bg-danger">
+      <center><h1 class="bg-success" style="color: white; margin-right: 30px;">Update Event</h1></center>
 
       <div class="row justify-content-center">
         <div class="col-lg-6">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <a href="{% url 'scmapp:admin_event' %}">Back</a>
+      <a href="{% url 'scmapp:admin_event' %}" class="btn btn-primary">Back</a>
     </div>
   </div>
 </div>

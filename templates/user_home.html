@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sports Club Management</title>
+  <title>Event Management System</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
@@ -18,11 +18,11 @@
   <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 
-<body>
-<div class="container-fluid header text-center">
-  Sports Club Management<br>
-  Welcome {{ name }}<br>
-  <a href="{% url 'scmapp:user_logout' %}" style="font-size:20;">Logout</a><br>
+<body class="bg-success">
+<div class="container-fluid header text-center bg-primary">
+  <h1 style="color: white;">CHMSC Events Management System</h1>
+  <h3 style="color: white;"> Welcome {{ name }} </h3>
+  <a href="{% url 'scmapp:user_logout' %}" style="font-size:20; color: white;">Logout</a><br>
   <span style="font-size:18px">{{ status }}</span>
 </div>
 
@@ -30,18 +30,18 @@
   <div class="row">
     <div class="col-lg-6">
       <a href="{% url 'scmapp:user_event' %}">
-      <div class="card">
-        <img src="{% static 'res/events.jpg' %}">
-        <div class="card-title text-center">Events</div>
+      <div class="card bg-danger">
+        <img src="{% static 'res/event.jpeg' %}">
+        <div class="card-title text-center" style="color: white;">Events</div>
       </div>
       </a>
     </div>
 
     <div class="col-lg-6">
       <a href="{% url 'scmapp:ground_booking' %}">
-      <div class="card">
-        <img src="{% static 'res/ground.jpg' %}" style="height:312px;">
-        <div class="card-title text-center">Ground Booking</div>
+      <div class="card bg-danger">
+        <img src="{% static 'res/volley.jpg' %}" style="height:312px;">
+        <div class="card-title text-center" style="color: white;">Events Booking</div>
       </div>
       </a>
     </div>

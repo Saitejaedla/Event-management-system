@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sports Club Management | Welcome</title>
+  <title>Registration| Welcome</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
@@ -17,10 +17,10 @@
   <link rel="stylesheet" href="{% static "css/registration.css" %}">
   <script type="text/javascript" src="{% static "js/main.js" %}"></script>
 </head>
-<body>
+<body class="bg-success">
 
-<div class="container-fluid header text-center">
-  Sports Club Management
+<div class="container-fluid header text-center bg-primary">
+  <h1 style="color: white;">CHMSC Events Management System</h1>
 </div>
 
 <div class="container-fluid">
@@ -34,9 +34,9 @@
 
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-lg-6 box" style="display:block;">
+    <div class="col-lg-6 box bg-danger" style="display:block;">
       <!-- <span style="font-size:26px;">Registration</span> -->
-      Registration<br>
+      <center><h1 class="bg-primary" style="color: white; margin-right: 30px;"> Registration</h1></center>
       <span style="font-size:18px;">{{ status }}</span>
 
       <div class="row justify-content-center">
@@ -65,7 +65,7 @@
           </div>
         </div>
     </div>
-    <a href="#" onclick="navigation(event)" id="loginLink">Already registered? Login</a>
+    <a href="#" onclick="navigation(event)" id="loginLink" style="color: white;">Already registered? Login</a>
 
     </div>
   </div>
@@ -73,8 +73,8 @@
 
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-lg-6 loginBox" style="display:none;">
-      Login
+    <div class="col-lg-6 loginBox bg-danger" style="display:none;">
+      <center><h1 class="bg-primary" style="color: white; margin-right: 30px;">Login</h1></center>
 
       <div class="row justify-content-center">
         <div class="col-lg-6">
@@ -92,7 +92,7 @@
           </div>
         </div>
       </div>
-      <a href="#" onclick="navigation(event)" id="regLink">Not a registered user? Register</a>
+      <a href="#" onclick="navigation(event)" id="regLink" style="color: white;">Not a registered user? Register</a>
 
     </div>
   </div>
